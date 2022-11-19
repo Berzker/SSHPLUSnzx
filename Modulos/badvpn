@@ -50,12 +50,10 @@ fun_badvpn() {
                 sleep 1
             }
             inst_udp () {
-                [[ -e "/bin/badvpn-udpgw" ]] && {
-                    cd $HOME
-                    wget https://github.com/Niltonjuniorxd/SSHPLUSnzx/raw/nzxs/Install/badvpn-udpgw -o /dev/null
-                    mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
-                    chmod 777 /bin/badvpn-udpgw
-                }
+                cd $HOME
+                wget https://github.com/Niltonjuniorxd/SSHPLUSnzx/raw/nzxs/Install/badvpn-udpgw -o /dev/null
+                mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
+                chmod 777 /bin/badvpn-udpgw
             }
 			echo -e "\033[1;32mINICIANDO O BADVPN... \033[1;33m"
             inst_udp
