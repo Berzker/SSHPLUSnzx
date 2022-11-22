@@ -80,12 +80,12 @@ help(){
 
 removeV2Ray() {
     #卸载V2ray脚本
-    bash <(curl -L -s  https://raw.githubusercontent.com/Niltonjuniorxd/v2ray/main/v2ray?token=GHSAT0AAAAAAB3I3POSZYH5LVCDAB4ZNNZCY345CWQ) --remove >/dev/null 2>&1
+    bash <(curl -L -s  https://raw.githubusercontent.com/Niltonjuniorxd/v2ray/main/v2ray) --remove >/dev/null 2>&1
     rm -rf /etc/v2ray >/dev/null 2>&1
     rm -rf /var/log/v2ray >/dev/null 2>&1
 
     #卸载Xray脚本
-    bash <(curl -L -s https://raw.githubusercontent.com/Niltonjuniorxd/v2ray/main/v2ray?token=GHSAT0AAAAAAB3I3POSZYH5LVCDAB4ZNNZCY345CWQ) --remove -x >/dev/null 2>&1
+    bash <(curl -L -s https://raw.githubusercontent.com/Niltonjuniorxd/v2ray/main/v2ray) --remove -x >/dev/null 2>&1
     rm -rf /etc/xray >/dev/null 2>&1
     rm -rf /var/log/xray >/dev/null 2>&1
 
